@@ -1,2 +1,2 @@
 # UttarBlog
-#Basic blog site using MERN
+Basic blog site using MERN
