@@ -19,9 +19,9 @@ const Homepage = () => {
 	return (
 		<div>
 			<div>
-				{/* <Posts postlist={postslist} /> */}
 				<Navbar />
-				<Article />
+				<Posts postlist={postslist} />
+				{/* <Article /> */}
 			</div>
 			{/* <h1>We are here</h1> */}
 		</div>

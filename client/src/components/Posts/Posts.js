@@ -1,14 +1,46 @@
-import React from "react";
-import SinglePost from "../SinglePost/SinglePost";
+import React, { useEffect, useState } from "react";
+import Card from "./../SinglePost/SinglePost";
+// import { useEffect, useState } from "react";
 
-const Posts = ({ postslist }) => {
+// const CardList = ({ postlists }) => {
+// 	const CardsArray = postlists?.map((user, i) => {
+// 		return (
+// 			<Card
+// 				key={i}
+// 				id={robots[i].id}
+// 				title={robots[i].title}
+// 				author={robots[i].author}
+// 			/>
+// 		);
+// 	});
+
+// 	// const Listing = () => {
+// 	// 	return CardsArray.map((i) => {
+// 	// 		return i;
+// 	// 	});
+// 	// };
+
+// 	return <div>{CardsArray}</div>;
+// };
+
+// export default CardList;
+
+const CardList = (postlists) => {
+	console.log("postlists", postlists.postlist);
 	return (
-		<div className='posts'>
-			{postslist.map((p) => (
-				<SinglePost post={p} />
-			))}
+		<div>
+			{postlists?.postlist.map((data, index) => {
+				return (
+					<Card
+						key={index}
+						id={data.id}
+						title={data.title}
+						author={data.author}
+					/>
+				);
+			})}
 		</div>
 	);
 };
 
-export default Posts;
+export default CardList;

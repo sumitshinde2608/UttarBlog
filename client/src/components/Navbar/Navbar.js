@@ -3,6 +3,7 @@ import logo from "./../../assets/logo.png";
 import Navbar from "react-bootstrap/Navbar";
 import Container from "react-bootstrap/Container";
 import Button from "react-bootstrap/Button";
+import { Link } from "react-router-dom";
 
 const NavigationBar = () => {
 	return (
@@ -20,7 +21,9 @@ const NavigationBar = () => {
 				</Navbar.Brand>
 				<Navbar.Collapse className='justify-content-end'>
 					<div style={{ padding: "20px" }}>
-						<Button variant='dark'>Write</Button>
+						<Link to='/write'>
+							<Button variant='dark'>Write</Button>
+						</Link>
 					</div>
 				</Navbar.Collapse>
 				{/* </Container> */}
