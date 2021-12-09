@@ -1,0 +1,35 @@
+.article {
+	padding-top: 50px;
+}
+
+.writeFormGroup {
+	margin-left: 150px;
+	display: flex;
+	align-items: center;
+}
+
+.writeInput {
+	font-size: 30px;
+	border: none;
+	padding: 20px;
+}
+
+.writeInput:focus {
+	outline: none;
+}
+
+.writeText {
+	font-size: 20px;
+}
+
+.writeSubmit {
+	position: absolute;
+	top: 20;
+	color: aliceblue;
+	background-color: #00bcd4;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+}

@@ -1,12 +1,19 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 dotenv.config();
 
 const app = express();
 
+app.use(cors());
 app.use(express.json());
+
+app.use(function (req, res, next) {
+	res.header("Access-Control-Allow-Methods", "POST, GET, OPTIONS");
+	next();
+});
 
 const postRoute = require("./routes/posts");
 
