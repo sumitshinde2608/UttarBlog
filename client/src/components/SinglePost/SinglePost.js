@@ -1,16 +1,46 @@
+import "./SinglePost.css";
+import edit from "./../../assets/edit.png";
+import trash from "../../assets/trash.png";
 import React from "react";
 
-const Card = (props) => {
-	const { title, id, author } = props;
+const SinglePost = () => {
 	return (
-		<div className='bg-lightest-blue dib br3 pa3 ma2 grow bw2 shadow-5 tc'>
-			<img src={`https://robohash.org/${title}?200x200`} alt={`${title}`} />
-			<div>
-				<h2> {title} </h2>
-				<p>{author}</p>
+		<div className='SinglePost container'>
+			<div className='SinglePostTitleBlock'>
+				<p className='SinglePostTitle'>Title</p>
+				<div className='SinglePostEdit'>
+					<img
+						class='SinglePostIcon'
+						src={edit}
+						hieght='30px'
+						width='30px'
+					></img>
+					<img
+						className='SinglePostIcon'
+						src={trash}
+						hieght='30px'
+						width='30px'
+					></img>
+				</div>
+			</div>
+			<div className='SinglePostContent'>
+				<p className='SinglePostContentText'>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod,
+					urna eget consectetur venenatis, nisl lectus aliquet nunc, eget
+					aliquet nisl nunc eget aliquet nisl nunc eget aliquet nisl nunc eget
+					aliquet nisl nunc eget aliquet nisl nunc eget aliquet nisl nunc eget
+					aliquet nisl nunc eget aliquet nisl nunc eget aliquet nisl nunc eget
+					aliquet nisl nunc eget
+				</p>
+			</div>
+
+			<div className='SinglePostAuthor'>
+				<p className='SinglePostAuthorText'>
+					Written by <b>Sumit</b>
+				</p>
 			</div>
 		</div>
 	);
 };
 
-export default Card;
+export default SinglePost;

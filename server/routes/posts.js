@@ -11,6 +11,16 @@ router.get("/", async (req, res) => {
 	}
 });
 
+//GetIndividualPost
+router.get("/:id", async (req, res) => {
+	try {
+		const posts = await Post.findById(req.params.id);
+		res.json(posts);
+	} catch (err) {
+		res.json({ message: err });
+	}
+});
+
 //CREATE NEW POST
 router.post("/", async (req, res) => {
 	const { title, content, author } = req.body;

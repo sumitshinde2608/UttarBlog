@@ -1,29 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Card from "./../SinglePost/SinglePost";
-// import { useEffect, useState } from "react";
-
-// const CardList = ({ postlists }) => {
-// 	const CardsArray = postlists?.map((user, i) => {
-// 		return (
-// 			<Card
-// 				key={i}
-// 				id={robots[i].id}
-// 				title={robots[i].title}
-// 				author={robots[i].author}
-// 			/>
-// 		);
-// 	});
-
-// 	// const Listing = () => {
-// 	// 	return CardsArray.map((i) => {
-// 	// 		return i;
-// 	// 	});
-// 	// };
-
-// 	return <div>{CardsArray}</div>;
-// };
-
-// export default CardList;
+import Card from "./../Card/Card";
 
 const CardList = (postlists) => {
 	console.log("postlists", postlists.postlist);
@@ -33,7 +9,7 @@ const CardList = (postlists) => {
 				return (
 					<Card
 						key={index}
-						id={data.id}
+						id={data._id}
 						title={data.title}
 						author={data.author}
 					/>
