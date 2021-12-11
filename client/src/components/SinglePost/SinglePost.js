@@ -6,6 +6,7 @@ import Navbar from "../Navbar/Navbar";
 import axios from "axios";
 import { useLocation } from "react-router";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const SinglePost = (id) => {
 	const location = useLocation();
@@ -41,12 +42,14 @@ const SinglePost = (id) => {
 				<div className='SinglePostTitleBlock'>
 					<p className='SinglePostTitle'>{post.title}</p>
 					<div className='SinglePostEdit'>
-						<img
-							class='SinglePostIcon'
-							src={edit}
-							hieght='30px'
-							width='30px'
-						></img>
+						<Link to={`/post/${path}/edit`}>
+							<img
+								class='SinglePostIcon'
+								src={edit}
+								hieght='30px'
+								width='30px'
+							></img>
+						</Link>
 						<img
 							className='SinglePostIcon'
 							src={trash}

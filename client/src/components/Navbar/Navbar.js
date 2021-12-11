@@ -11,13 +11,15 @@ const NavigationBar = () => {
 			<Navbar bg='light'>
 				{/* <Container> */}
 				<Navbar.Brand href='#home'>
-					<img
-						src={logo}
-						width='100'
-						height='90'
-						className='align-top'
-						alt='Howler'
-					/>
+					<Link to='/'>
+						<img
+							src={logo}
+							width='100'
+							height='90'
+							className='align-top'
+							alt='Howler'
+						/>
+					</Link>
 				</Navbar.Brand>
 				<Navbar.Collapse className='justify-content-end'>
 					<div style={{ padding: "20px" }}>
