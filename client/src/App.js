@@ -10,7 +10,7 @@ const App = () => (
 		<Routes>
 			<Route path='/' element={<Homepage />} />
 			<Route path='/write' element={<Article />} />
-			<Route path='/post' element={<SinglePost />} />
+			<Route path='/post/:postid' element={<SinglePost />} />
 		</Routes>
 	</Router>
 );
