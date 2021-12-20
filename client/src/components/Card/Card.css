@@ -7,11 +7,15 @@
 		rgba(97, 186, 255, 1) 0%,
 		rgba(166, 239, 253, 1) 90.1%
 	);
-	height: 450px;
+	height: 300px;
 	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	flex-direction: row;
+	/* justify-content: center; */
+	/* align-items: center; */
+}
+
+.postCard a {
+	text-decoration: none;
 }
 
 .postCard:hover {
@@ -26,14 +30,39 @@
 	color: white;
 }
 
-.info {
+.PostImage {
+	width: 20vw;
+	height: 100%;
+	border-radius: 10px;
+	/* background-image: url(${props=>props.image}); */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	text-decoration: none;
 }
 
-.postCard a {
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
 	text-decoration: none;
+	width: 80vw;
+}
+
+.contentText {
+	display: inline-block;
+	text-overflow: ellipsis;
+	max-width: 600px;
+	height: 20vh;
+	overflow: hidden;
+	white-space: nowrap;
+	/* float: left; */
+}
+
+h2 {
+	color: aliceblue;
 }

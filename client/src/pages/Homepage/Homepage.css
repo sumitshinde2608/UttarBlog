@@ -1,4 +1,4 @@
 .HomepageBackground {
- background-image: linear-gradient($white 0.4rem, transparent 0.4rem),
-  linear-gradient(90deg, $white 0.4rem, transparent 0.4rem);
+	background-image: linear-gradient(white 0.4rem, transparent 0.4rem),
+		linear-gradient(90deg, white 0.4rem, transparent 0.4rem);
 }

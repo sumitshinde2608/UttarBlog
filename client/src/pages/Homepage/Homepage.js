@@ -3,6 +3,7 @@ import axios from "axios";
 import Posts from "./../../components/Posts/Posts";
 import Article from "../Article/Article";
 import Navbar from "../../components/Navbar/Navbar";
+import "./Homepage.css";
 
 const Homepage = () => {
 	const [postslist, setPosts] = useState([]);
@@ -17,10 +18,10 @@ const Homepage = () => {
 	}, []);
 
 	return (
-		<div>
+		<div className='HomepageBackground'>
+			<Navbar />
 			<div>
-				<Navbar />
-				<div className='container'>
+				<div className='container '>
 					<Posts postlist={postslist} />
 					{/* <Article /> */}
 				</div>

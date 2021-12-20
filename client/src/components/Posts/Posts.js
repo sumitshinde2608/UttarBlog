@@ -16,6 +16,7 @@ const CardList = (postlists) => {
 								id={data._id}
 								title={data.title}
 								author={data.author}
+								content={data.content}
 							/>
 						</Col>
 					);

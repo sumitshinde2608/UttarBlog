@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "./Card.css";
 
 const Card = (props) => {
-	const { title, id, author } = props;
+	const { title, id, author, content } = props;
 	return (
 		<div className='postCard'>
 			<div className='PostImage'>
@@ -13,7 +13,12 @@ const Card = (props) => {
 				<Link to={`/post/${id}`}>
 					<h2> {title} </h2>
 				</Link>
-				<p>{author}</p>
+				<div className='contentText'>
+					<p> {content}</p>
+				</div>
+				<p>
+					<b>{author}</b>
+				</p>
 			</div>
 		</div>
 	);
