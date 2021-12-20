@@ -7,6 +7,11 @@ import axios from "axios";
 import { useLocation } from "react-router";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { AiOutlineLink } from "react-icons/ai";
+import { FaFacebookF } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
+import { FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const SinglePost = (id) => {
 	const location = useLocation();
@@ -41,6 +46,7 @@ const SinglePost = (id) => {
 			<div className='SinglePost container'>
 				<div className='SinglePostTitleBlock'>
 					<p className='SinglePostTitle'>{post.title}</p>
+
 					<div className='SinglePostEdit'>
 						<Link to={`/post/${path}/edit`}>
 							<img
@@ -58,6 +64,13 @@ const SinglePost = (id) => {
 							width='30px'
 						></img>
 					</div>
+				</div>
+				<div className='SinglePostButtons'>
+					<AiOutlineLink className='SinglePostIcon' />
+					<FaFacebookF className='SinglePostIcon' />
+					<BsTwitter className='SinglePostIcon' />
+					<FaWhatsapp className='SinglePostIcon' />
+					<FaLinkedin className='SinglePostIcon' />
 				</div>
 				<div className='SinglePostContent'>
 					<p className='SinglePostContentText'>{post.content}</p>
