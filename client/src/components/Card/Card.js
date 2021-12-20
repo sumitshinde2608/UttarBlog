@@ -1,12 +1,13 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Card.css";
 
 const Card = (props) => {
 	const { title, id, author } = props;
 	return (
-		<div className='bg-lightest-blue dib br3 pa3 ma2 grow bw2 shadow-5 tc'>
+		<div className='postCard'>
 			<img src={`https://robohash.org/${title}?200x200`} alt={`${title}`} />
-			<div>
+			<div className='info'>
 				<Link to={`/post/${id}`}>
 					<h2> {title} </h2>
 				</Link>

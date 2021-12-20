@@ -1,0 +1,39 @@
+.postCard {
+	border-radius: 10px;
+	margin: 5%;
+	padding: 5%;
+	background-image: radial-gradient(
+		circle farthest-corner at 10% 20%,
+		rgba(97, 186, 255, 1) 0%,
+		rgba(166, 239, 253, 1) 90.1%
+	);
+	height: 450px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.postCard:hover {
+	color: white;
+	background-image: radial-gradient(
+		circle 610px at 5.2% 51.6%,
+		rgba(5, 8, 114, 1) 0%,
+		rgba(7, 3, 53, 1) 97.5%
+	);
+}
+.postCard:hover a {
+	color: white;
+}
+
+.info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+}
+
+.postCard a {
+	text-decoration: none;
+}

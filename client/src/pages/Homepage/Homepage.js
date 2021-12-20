@@ -20,8 +20,10 @@ const Homepage = () => {
 		<div>
 			<div>
 				<Navbar />
-				<Posts postlist={postslist} />
-				{/* <Article /> */}
+				<div className='container'>
+					<Posts postlist={postslist} />
+					{/* <Article /> */}
+				</div>
 			</div>
 			{/* <h1>We are here</h1> */}
 		</div>
