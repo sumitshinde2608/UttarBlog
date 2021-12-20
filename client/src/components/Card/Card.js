@@ -6,7 +6,9 @@ const Card = (props) => {
 	const { title, id, author } = props;
 	return (
 		<div className='postCard'>
-			<img src={`https://robohash.org/${title}?200x200`} alt={`${title}`} />
+			<div className='PostImage'>
+				<img src={`https://robohash.org/${title}?200x200`} alt={`${title}`} />
+			</div>
 			<div className='info'>
 				<Link to={`/post/${id}`}>
 					<h2> {title} </h2>

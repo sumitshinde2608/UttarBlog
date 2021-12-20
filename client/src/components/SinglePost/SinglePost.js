@@ -76,6 +76,7 @@ const SinglePost = (id) => {
 					<p className='SinglePostContentText'>{post.content}</p>
 				</div>
 
+				<hr />
 				<div className='SinglePostAuthor'>
 					<p className='SinglePostAuthorText'>
 						Written by <b>{post.author}</b>
