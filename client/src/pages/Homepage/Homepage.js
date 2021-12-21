@@ -3,6 +3,7 @@ import axios from "axios";
 import Posts from "./../../components/Posts/Posts";
 import Article from "../Article/Article";
 import Navbar from "../../components/Navbar/Navbar";
+import Sidebar from "../../components/Sidebar/Sidebar";
 import "./Homepage.css";
 
 const Homepage = () => {
@@ -18,15 +19,18 @@ const Homepage = () => {
 	}, []);
 
 	return (
-		<div className='HomepageBackground'>
+		<div>
 			<Navbar />
-			<div>
-				<div className='container '>
+
+			<div className='HomepageBackground'>
+				<div className='Posts'>
 					<Posts postlist={postslist} />
-					{/* <Article /> */}
 				</div>
+				<div className='Sidebar'>
+					<Sidebar />
+				</div>
+				{/* <Article /> */}
 			</div>
-			{/* <h1>We are here</h1> */}
 		</div>
 	);
 };

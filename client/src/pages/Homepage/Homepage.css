@@ -2,3 +2,31 @@
 	background-image: linear-gradient(white 0.4rem, transparent 0.4rem),
 		linear-gradient(90deg, white 0.4rem, transparent 0.4rem);
 }
+
+.Posts {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	width: 1500px;
+}
+
+.Sidebar {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+	justify-content: center;
+	margin-top: 20px;
+	width: available;
+}
+
+.HomepageBackground {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	margin-top: 20px;
+	width: auto;
+}
